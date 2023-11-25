@@ -30,3 +30,5 @@ console.log('milk'.length == 'meat'.length)      // true
 console.log('milk'.length != 'meat'.length)      // false
 console.log('tomato'.length == 'potato'.length)  // true
 console.log('python'.length > 'dragon'.length)   // false
+
+// dorey.github.io/JavaScript-Equality-Table/

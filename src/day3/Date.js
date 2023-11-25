@@ -17,10 +17,20 @@ console.log(allSeconds) // 1578092201341, this is the number of seconds passed f
 const timeInSeconds = new Date().getTime()
 console.log(allSeconds == timeInSeconds) // true
 
-const year = now.getFullYear() // return year
-const month = now.getMonth() + 1 // return month(0 - 11)
-const date = now.getDate() // return date (1 - 31)
-const hours = now.getHours() // return number (0 - 23)
-const minutes = now.getMinutes() // return number (0 -59)
+// const year = now.getFullYear() // return year
+// const month = now.getMonth() + 1 // return month(0 - 11)
+// const date = now.getDate() // return date (1 - 31)
+// const hours = now.getHours() // return number (0 - 23)
+// const minutes = now.getMinutes() // return number (0 -59)
+//
+// console.log(`${date}/${month}/${year} ${hours}:${minutes}`) // 4/1/2020 0:56
 
-console.log(`${date}/${month}/${year} ${hours}:${minutes}`) // 4/1/2020 0:56
+
+// 1. Create a human readable time format using the Date time object
+let year = now.getFullYear();
+let month = String(now.getMonth() + 1).padStart(2, '0'); // ayı 2 basamaklı hale getirir
+let day = String(now.getDate()).padStart(2, '0'); // günü 2 basamaklı hale getirir
+let hour = String(now.getHours()).padStart(2, '0'); // saati 2 basamaklı hale getirir
+let minute = String(now.getMinutes()).padStart(2, '0'); // dakikayı 2 basamaklı hale getirir
+
+console.log(`YYYY-MM-DD HH:mm: ${year}-${month}-${day} ${hour}:${minute}`);

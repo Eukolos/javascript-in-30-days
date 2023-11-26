@@ -4,7 +4,7 @@ if (num > 0) {
 }
 //  3 is a positive number
 
-let isRaining = Math.floor(Math.random()*11) > 5
+let isRaining = Math.floor(Math.random() * 11) > 5
 if (isRaining) {
     console.log('Remember to take your rain coat.')
 } else if (!isRaining) {
@@ -13,7 +13,7 @@ if (isRaining) {
     console.log('Have a nice day.')
 }
 
-let randomNum = Math.floor(Math.random()*6)
+let randomNum = Math.floor(Math.random() * 6)
 
 switch (randomNum) {
     case 0:
@@ -47,7 +47,4 @@ switch (weather) {
         console.log(' No need for rain coat.')
 }
 
-let isRaining = true
-isRaining
-    ? console.log('You need a rain coat.')
-    : console.log('No need for a rain coat.')
+isRaining ? console.log('You need a rain coat.') : console.log('No need for a rain coat.')

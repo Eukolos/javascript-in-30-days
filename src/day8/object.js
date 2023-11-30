@@ -53,6 +53,11 @@ person.skills.push('Java')
 person.skills.push('Spring Boot')
 person.isMarried = true
 
+Object.freeze(person) // its make object immutable
+
+Object.seal(person) // you can change values but you cant add new property
+
+
 person.getPersonInfo = function() {
     let skillsWithoutLastSkill = this.skills
         .splice(0, this.skills.length - 1)
